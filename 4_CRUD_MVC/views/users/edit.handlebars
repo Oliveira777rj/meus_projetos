@@ -1,0 +1,13 @@
+
+<form action="/edit" method="post">
+<input type="hidden" name="id" value="{{data.id}}">
+  <div class="mb-3">
+    <label for="name" class="form-label">Nome</label>
+  <input type="text" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp" placeholder="Digite seu nome completo" value="{{data.name}}">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Digite seu melhor e-mail" value="{{data.email}}">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

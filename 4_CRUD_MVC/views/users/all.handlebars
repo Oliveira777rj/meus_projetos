@@ -1,0 +1,20 @@
+<form action="/all" method="get">
+{{#each data}}
+  <div class="mb-3">
+   <h2 class="form-control">{{this.id}} - {{this.name}}</h2>
+   <h2 class="form-control">{{this.email}}</h2>
+
+   <form action="/remove/{{this.id}}" method="post">
+          <button type="submit" class="btn btn-danger">
+            <input type="hidden" name="id" value="{{this.id}}">
+            Excluir
+          </button>
+    </form>
+     <form action="/edit/{{this.id}}" method="post">
+          <button type="submit" class="btn btn-primary">
+            <input type="hidden" name="id" value="{{this.id}}">
+            Editar
+          </button>
+    </form>
+   {{/each}}
+</form>
