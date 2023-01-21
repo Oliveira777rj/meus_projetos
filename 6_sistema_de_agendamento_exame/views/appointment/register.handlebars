@@ -1,0 +1,44 @@
+<form method="post">
+   <div class="form-group">
+    <label for="exampleFormControlInput1">Prontuario</label>
+    <input type="number" class="form-control" placeholder="Digite prontuário" name="prontuario" required>
+   </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Paciente</label>
+    <input type="text" class="form-control" placeholder="Nome Paciente" name="name" required>
+  </div>
+  <div class="form-group" >
+    <label for="exampleFormControlSelect1">Médico</label required>
+    <select class="form-control" name="medico">
+      <option></option>
+      <option>Ana Julia</option>
+      <option>Paula Saio</option>
+      <option>Daniel Siqueira</option>
+      <option>Paulo Nakajima</option>
+      <option>Luiza Matteo</option>
+      <option>Mariana Lima</option>
+      <option>Renato Oliveira</option>
+      <option>Sergio Almeida</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Procedimentos</label>
+    <select multiple class="form-control" name="procedimento" required>
+      <option>Ceratoscopia</option>
+      <option>Mapeamento</option>
+      <option>Microscopia</option>
+      <option>Paquimetria</option>
+      <option>Potencial Acuidade Visual</option>
+      <option>Tonometria</option>
+    </select>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Data para marcação</label>
+    <input type="date" class="form-control" name="data" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Observações</label>
+    <textarea class="form-control" rows="3" name="observacoes"></textarea> 
+  </div>
+  <button type="submit">Agendar</button>
+</form>
