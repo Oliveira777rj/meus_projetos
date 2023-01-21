@@ -1,1 +1,1 @@
-# meus_projetos
+Meus projetos utilizados para práticar. 
